@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 100vh;  */
+  height: 190vh; 
   background-color: beige;
 }
 
@@ -48,7 +48,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: monospace;
 }
 
