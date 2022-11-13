@@ -20,7 +20,7 @@ export default function PageWithJSbasedForm() {
     }
 
     // Send the form data to our API and get a response.
-    const response = await fetch('/api/form', {
+    const response = await fetch('https://lfhbuatj55.execute-api.us-east-2.amazonaws.com/default/save_contact_details', {
       // Body of the request is the JSON data we created above.
       body: JSON.stringify(data),
       // Tell the server we're sending JSON.
@@ -29,12 +29,13 @@ export default function PageWithJSbasedForm() {
       },
       // The method is POST because we are sending data.
       method: 'POST',
+      mode: 'no-cors',
     })
 
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
-    const result = await response.json()
-    alert(`Is this your full name: ${result.data}`)
+    // const result = await response.json()
+    alert(`Obrigado! Entraremos em contato em breve`)
   }
 
   return (
